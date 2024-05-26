@@ -1,0 +1,56 @@
+@import '../../assets/colors';
+
+.footer {
+  background-color: $footer-bg-color;
+  width: 100%;
+  margin-top: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+}
+
+.footerTitle {
+  color: $footer-text-color;
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footerContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row-gap: 10px;
+}
+
+.footerText {
+  color: $footer-text-color;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: $footer-text-color;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .footerWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

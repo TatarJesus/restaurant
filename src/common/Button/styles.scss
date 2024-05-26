@@ -1,0 +1,71 @@
+@import '../../assets/colors';
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  background: $primary;
+  color: $secondary;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 13px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border-color: $primary;
+    color: $primary ;
+  }
+
+  &:disabled {
+    background-color: $button-bg-disabled-color;
+    border-color: $button-bg-disabled-color;
+    cursor: default;
+    color: $primary;
+  }
+
+  &__dark {
+    background: transparent;
+    color: $secondary;
+    border: 2px solid $secondary;
+
+    &:hover,
+    &:active {
+      background-color: $secondary;
+      border-color: $primary;
+      color: $primary;
+    }
+
+    &:disabled {
+      background-color: $button-bg-disabled-color;
+      border-color: $button-bg-disabled-color;
+      cursor: default;
+    }
+  }
+
+  &__darkV2 {
+    background-color: $secondary;
+    color: $primary;
+    border: 2px solid $secondary;
+
+    &:hover,
+    &:active {
+      background-color: $primary;
+      border-color: $secondary;
+      color: $secondary;
+    }
+
+    &:disabled {
+      background-color: $button-bg-disabled-color;
+      border-color: $button-bg-disabled-color;
+      cursor: default;
+      color: $primary;
+    }
+  }
+}

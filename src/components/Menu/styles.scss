@@ -1,0 +1,44 @@
+@import '../../assets/colors';
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+  background-color: #cccec5;
+  position: relative;
+
+  .button {
+    margin-top: 50px;
+  }
+
+}
+
+.menuTitle {
+  color: $secondary;
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menuContainer{
+  max-width: 800px;
+  @media only screen and (max-width: 1400px) {
+    max-width: calc(100% - 700px);
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: calc(100% - 200px);
+    padding: 0 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .menu {
+    padding: 20px 0;
+  }
+}
